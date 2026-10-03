@@ -1,0 +1,12 @@
+services:
+  elinalias:
+    build: .
+    container_name: elinalias
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - MISSKEY_HOST=misskey.io
+      - POST_TIMES=00:00,06:00,12:00,18:00
+    volumes:
+      - ./botdata:/data
