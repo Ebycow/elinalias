@@ -1,0 +1,12 @@
+__pycache__/
+*.egg-info/
+build/
+dist/
+.venv/
+
+botdata/
+.env
+
+# ゲームから抽出したデータ(再配布しない)
+src/elinalias/data/*.json
+

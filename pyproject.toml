@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "elinalias"
+version = "0.1.0"
+description = "Elin の異名(エイリアス)生成を再現する Python ライブラリ"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+elinalias = "elinalias.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+elinalias = ["data/*.json"]
